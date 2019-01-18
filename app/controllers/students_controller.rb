@@ -3,8 +3,8 @@ class StudentsController < ApplicationController
     @students = Student.all
   end
 
-  def show 
+  def show
     @student=Students.find_by_id(@params[:id])
   end
-  
+
 end
